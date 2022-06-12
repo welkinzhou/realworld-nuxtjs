@@ -239,6 +239,18 @@ export default {
       return Math.ceil(this.articlesCount / this.pageSize);
     },
   },
+  head() {
+    return {
+      title: `Let's try - RealWorld`,
+      meta: [
+        {
+          hid: "home",
+          name: "home",
+          content: "A simple demo, just try it !",
+        },
+      ],
+    };
+  },
 };
 </script>
 
